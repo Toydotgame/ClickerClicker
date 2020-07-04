@@ -1,5 +1,5 @@
 # Clicker Clicker
-## **Version** Alpha 1.1
+## **Version** Alpha 1.2
 
 _Clicker Clicker is a remake of the Scratch project also entitled [Clicker Clicker](https://scratch.mit.edu/projects/404923232/)._
 
