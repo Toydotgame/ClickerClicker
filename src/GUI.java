@@ -3,6 +3,7 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.BorderFactory;
 import javax.swing.JButton;
+// import javax.swing.Timer;
 
 import java.awt.BorderLayout;
 import java.awt.Dimension;
@@ -10,17 +11,19 @@ import java.awt.GridLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class GUI implements ActionListener {
+public class GUI extends Thread implements ActionListener {
 	static int clicks = 0;
-	static int autoClickLevel = 0;
+	volatile static int autoClickLevel = 0;
 	int autoClickNextLevelUpgradeCost = 100;
-	static int autoClickRateMilliseconds = 0;
 	String versionRing = "Alpha";
-	String versionNumber = "1.2";
+	String versionNumber = "1.3";
+	
 	JLabel clickText;
 	JFrame frame;
 	JPanel panel;
 	JLabel autoClickCostText;
+	
+//	Timer autoClickTimer;
 	
 	public GUI() {
 		frame = new JFrame();
@@ -34,15 +37,29 @@ public class GUI implements ActionListener {
 				if(clicks >= autoClickNextLevelUpgradeCost && autoClickLevel < 9) {
 					autoClickLevel++;
 					autoClickUpgradeButton.setText("Auto Clicker - Level " + autoClickLevel);
+					
 					clicks = clicks - autoClickNextLevelUpgradeCost;
+					
 					clickText.setText("Times Clicked: " + clicks);
 					autoClickNextLevelUpgradeCost = autoClickNextLevelUpgradeCost * 10;
 					autoClickCostText.setText("Auto Clicker Upgrade Cost: " + autoClickNextLevelUpgradeCost + " Clicks");
+					
 					frame.pack();
+					
+//					autoClickTimer = new Timer(autoClickLevel*1000, this);
+//					autoClickTimer.setInitialDelay(1000);
+//					
 //					while(autoClickLevel > 0) {
-//						if(autoClickLevel == 1) {
-//							SwingUtilities.invokeLater(() -> { clicks++; })
+//						autoClickTimer.start();
+//						public void actionPerformed(ActionEvent e) {
+//							clicks++;
 //						}
+//						
+//						// PLEASE SOMEONE GIVE ME A WAY TO SLOW THIS DOWN **WITHOUT** _CRASHING THE GUI_!!!!!
+//				        System.out.println("\"Clicks\" is now " + clicks);
+//				        
+//				        clickText.setText("Times Clicked: " + clicks);
+//				        frame.pack();
 //					}
 				}
 			}

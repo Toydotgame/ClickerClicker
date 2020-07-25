@@ -1,10 +1,10 @@
 # Clicker Clicker
-## **Version** Alpha 1.2
+## **Version** Alpha 1.3
 
 _Clicker Clicker is a remake of the Scratch project also entitled [Clicker Clicker](https://scratch.mit.edu/projects/404923232/)._
 
 ## Introduction
-Clicker Clicker is a basic idle game written as a standalone desktop application. Click the main button to get more _Clicks_ for you to spend on upgradees, which, in turn, give you more _Clicks_ faster than normal.
+Clicker Clicker is a basic idle game written as a standalone desktop application. Click the main button to get more _Clicks_ for you to spend on upgrades - which, in turn, give you more _Clicks_ faster than normal.
 Clicker Clicker is more of a hobby project rather than a proper game, I'm learning Java and I thought this might be a fun project to make.
 
 ## Version
