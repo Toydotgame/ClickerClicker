@@ -44,7 +44,7 @@ public class GUI extends Thread implements ActionListener {
 					autoClickNextLevelUpgradeCost = autoClickNextLevelUpgradeCost * 10;
 					autoClickCostText.setText("Auto Clicker Upgrade Cost: " + autoClickNextLevelUpgradeCost + " Clicks");
 					
-					frame.pack();
+					frame.pack(); // I don't believe this is needed; but better safe than sorry.
 					
 //					autoClickTimer = new Timer(autoClickLevel*1000, this);
 //					autoClickTimer.setInitialDelay(1000);
@@ -95,4 +95,6 @@ public class GUI extends Thread implements ActionListener {
 		clickText.setHorizontalTextPosition(JLabel.CENTER);
 		clickText.setVerticalTextPosition(JLabel.CENTER);
 	}
+	
+	// Was gonna put in Discord SDK; but looking further into it, HELL NO.
 }
