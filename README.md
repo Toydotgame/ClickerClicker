@@ -1,5 +1,5 @@
 # Clicker Clicker
-[![HitCount](http://hits.dwyl.com/Toydotgame/ClickerClicker.svg)](http://github.com/Toydotgame/ClickerClicker) ![GitHub Version](https://img.shields.io/github/manifest-json/v/Toydotgam/ClickerClicker?color=lightgreen&style=flat-square)
+[![HitCount](http://hits.dwyl.com/Toydotgame/ClickerClicker.svg)](http://github.com/Toydotgame/ClickerClicker) [![GitHub Version](https://img.shields.io/github/manifest-json/v/Toydotgam/ClickerClicker?color=lightgreen&style=flat-square)](https://github.com/Toydotgame/ClickerClicker/releases)
 #### **Version** Alpha 1.3
 
 _Clicker Clicker is a remake of the Scratch project also entitled [Clicker Clicker](https://scratch.mit.edu/projects/404923232/)._
